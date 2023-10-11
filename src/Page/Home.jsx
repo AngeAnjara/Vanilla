@@ -3,8 +3,12 @@ import vanilla from "../assets/vanilla.jpg";
 import Typography from "@mui/material/Typography";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./Fichier Scss/Home.scss";
-import { Container, Grid, Box } from "@mui/material";
-import BoxContainer from "../Components/Box";
+import CardActions from '@mui/material/CardActions';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import { Container, Grid, Box,Card,Button } from "@mui/material";
+import { Produits } from "../assets/Data";
+
 const Home = () => {
   return (
     <div className="allBox">
@@ -56,9 +60,39 @@ const Home = () => {
           }
           <br />
         </Typography>
-          <Container className="containerM">
-          <BoxContainer/>
-          </Container>
+         <Container>
+         <Grid container spacing={2}>
+          {Produits.map((item) => {
+            return (
+              <Grid key={item.id}>
+                <Card
+                  sx={{ maxWidth: 345, marginLeft: "20px", marginTop: "20px" }}
+                >
+                  <CardMedia
+                    component="img"
+                    alt="green iguana"
+                    height="140"
+                    image={item.photo}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {item.nomProduit}: {item.itemProduit}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {item.desc.slice(0, 150)}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Link to="/ficheProduits">
+                      <Button size="small">Learn More</Button>
+                    </Link>
+                  </CardActions>
+                </Card>
+              </Grid>
+            );
+          })}
+        </Grid>     
+         </Container>
         
           
          
