@@ -1,0 +1,131 @@
+@import "./Color.scss";
+
+.allNavBar{
+
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    box-shadow: 15px 15px 50px rgba($color: #000000, $alpha: 0.15);
+    .Logo{
+        img{
+            width: 50px;
+        }
+    }
+    .allLink{
+        display: flex;
+        gap: 1rem;
+        .Link{
+            .lien{
+                text-decoration: none;
+                color: $colorMarron;
+                transition: all 600ms ease;
+                letter-spacing: 2px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .box{
+                    width: 5px;
+                    height: 2px;
+                    background: rgba($color: #000000, $alpha: 0.15);
+                    transition: all 600ms ease;
+                }
+            }
+            .lien:hover{
+                letter-spacing: 3px;
+
+                .box{
+                    width: 50px;
+                    height: 2px;
+                    background: $colorMarron;
+                }
+            }
+        }
+    }
+    .btnShow{
+        display: none;
+    }
+    .showMenu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 664px) {
+    .allNavBar{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+    box-shadow: 15px 15px 50px rgba($color: #000000, $alpha: 0.15);
+    .Logo{
+        img{
+            width: 50px;
+        }
+    }
+    .allLink{
+        display: flex;
+        gap: 1rem;
+        .Link{
+            display: none;
+            .lien{
+                font-size: 10px;
+                text-decoration: none;
+                color: $colorMarron;
+                transition: all 600ms ease;
+                letter-spacing: 2px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .box{
+                    width: 5px;
+                    height: 2px;
+                    background: rgba($color: #000000, $alpha: 0.15);
+                    transition: all 600ms ease;
+                }
+            }
+            .lien:hover{
+                letter-spacing: 3px;
+
+                .box{
+                    width: 50px;
+                    height: 2px;
+                    background: $colorMarron;
+                }
+            }
+        }
+    }
+    .btnShow{
+        display: block;
+        background: none;
+        border: none;
+    }
+    .Facebook{
+        display:none;
+    }
+    .showMenu{
+        position: absolute;
+        top: 100px;
+        width: 75%;
+        height: 150px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 15px 15px 50px rgba($color: #000000, $alpha: 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 999;
+        gap: 1rem;
+        padding: 20px;
+        .lien{
+           color: $colorMarron;
+           text-decoration: none;
+          
+        }
+    }
+}
+}
