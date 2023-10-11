@@ -14,7 +14,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import { useState } from 'react';
-import { Produits } from '../assets/Data/Data';
+import { Produits } from '../assets/Data';
 
 
 
