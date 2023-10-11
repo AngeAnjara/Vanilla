@@ -7,8 +7,8 @@ import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import { Container, Grid, Box,Card,Button } from "@mui/material";
-import { Produits } from "../assets/Data";
-
+import Poivre from "../assets/poivre.jpg"
+import BoxContainer from "../Components/Box";
 const Home = () => {
   return (
     <div className="allBox">
@@ -62,9 +62,8 @@ const Home = () => {
         </Typography>
          <Container>
          <Grid container spacing={2}>
-          {Produits.map((item) => {
-            return (
-              <Grid key={item.id}>
+         
+              <Grid >
                 <Card
                   sx={{ maxWidth: 345, marginLeft: "20px", marginTop: "20px" }}
                 >
@@ -72,14 +71,14 @@ const Home = () => {
                     component="img"
                     alt="green iguana"
                     height="140"
-                    image={item.photo}
+                    image={Poivre}
                   />
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                      {item.nomProduit}: {item.itemProduit}
+                    Poivre Grena 
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      {item.desc.slice(0, 150)}
+                      
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -89,12 +88,11 @@ const Home = () => {
                   </CardActions>
                 </Card>
               </Grid>
-            );
-          })}
+        
         </Grid>     
          </Container>
         
-          
+          <BoxContainer/>
          
          
       </Container>
