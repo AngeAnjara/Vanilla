@@ -12,11 +12,10 @@ import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 import { useState } from 'react';
 import { Produits } from '../assets/Data/Data';
-import { Grid } from '@mui/material';
-import { Container } from 'postcss';
+
 
 
 const ExpandMore = styled((props) => {
@@ -56,7 +55,7 @@ const BoxContainer = () => {
           component="img"
           height="194"
           image={item.photo}
-          alt="Paella dish"
+          alt={item.nomProduit}
         />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
