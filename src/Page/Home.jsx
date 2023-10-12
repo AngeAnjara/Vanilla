@@ -38,7 +38,7 @@ const Home = () => {
         <br />
         <Grid container spacing={2}>
           <Grid item xs={6} md={8}>
-            <Typography variant="h6">
+            <Typography variant="h5">
               <span className="echap"></span>
               {
                 " Chez Vanilla Horizon Export, l'authentique artisan de la vanille de Madagascar. Située au cœur de l'île, notre entreprise se distingue par le fait que nous ne sommes pas seulement des exportateurs, mais également les propriétaires de notre propre plantation."
@@ -57,7 +57,7 @@ const Home = () => {
         <Typography variant="h4">Nos Produits</Typography>
         <span className="ligne"></span>
         <br />
-        <Typography variant="h6">
+        <Typography variant="h5">
           <span className="echap"></span>
           {
             " Au-delà de la vanille, notre plantation offre une gamme d'ingrédients exceptionnels, révélant les trésors authentiques de Madagascar. Explorez avec nous le monde riche et diversifié du poivre grena, des huiles essentielles d'ylang-ylang, de coco et de calophylum."
