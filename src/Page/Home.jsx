@@ -92,8 +92,7 @@ const Home = () => {
         </Grid>     
          </Container>
         
-          <BoxContainer/>
-         
+        
          
       </Container>
     </div>
