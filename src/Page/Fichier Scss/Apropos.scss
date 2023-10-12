@@ -1,0 +1,14 @@
+@import "./Color.scss";
+
+.containerS{
+    padding: 20px;
+    box-shadow: 15px 15px 10px 5px rgba($color: #000000, $alpha: 0.1);
+    border-radius: 15px;
+    border: 2px solid white;
+    color: $colorMarron;
+    z-index: 2;
+    margin-top: 50px;
+    .espace{
+        margin-left: 25px;
+    }
+}

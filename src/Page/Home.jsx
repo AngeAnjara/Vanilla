@@ -3,12 +3,16 @@ import vanilla from "../assets/vanilla.jpg";
 import Typography from "@mui/material/Typography";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./Fichier Scss/Home.scss";
-import CardActions from '@mui/material/CardActions';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import { Container, Grid, Box,Card,Button } from "@mui/material";
-import Poivre from "../assets/poivre.jpg"
-import BoxContainer from "../Components/Box";
+import CardActions from "@mui/material/CardActions";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
+import { Container, Grid, Box, Card, Button } from "@mui/material";
+import Poivre from "../assets/poivre.jpg";
+import Ylang from "../assets/Ylang-ylang.jpeg";
+import Calophylum from "../assets/calophylum.jpg";
+import Coco from "../assets/coco.jpg";
+import Footer from "../Components/Footer";
+
 const Home = () => {
   return (
     <div className="allBox">
@@ -60,47 +64,117 @@ const Home = () => {
           }
           <br />
         </Typography>
-         <Container>
-         <Grid container spacing={2}>
-         
-              <Grid >
-                <Card
-                  sx={{ maxWidth: 345, marginLeft: "20px", marginTop: "20px" }}
-                >
-                  <CardMedia
-                    component="img"
-                    alt="green iguana"
-                    height="140"
-                    image={Poivre}
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                    Poivre Grena 
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Link to="/ficheProduits">
-                      <Button size="small">Learn More</Button>
-                    </Link>
-                  </CardActions>
-                </Card>
-              </Grid>
-        
-        </Grid>     
-         </Container>
-        
-        
-         
+        <Container>
+          <Grid container spacing={2}>
+            <Grid>
+              <Card
+                sx={{ maxWidth: 345, marginLeft: "20px", marginTop: "20px" }}
+              >
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="140"
+                  image={Poivre}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {"Poivre Grena : Un Piquant d'Excellence"}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {" Un Piquant d'Excellence"}
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Link to="/ficheProduits">
+                    <Button size="small">Learn More</Button>
+                  </Link>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid>
+              <Card
+                sx={{ maxWidth: 345, marginLeft: "20px", marginTop: "20px" }}
+              >
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="140"
+                  image={Ylang}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {"Huile Essentielle d'Ylang-Ylang "}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {" L'Élégance Florale"}
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Link to="/ficheProduits">
+                    <Button size="small">Learn More</Button>
+                  </Link>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid>
+              <Card
+                sx={{ maxWidth: 345, marginLeft: "20px", marginTop: "20px" }}
+              >
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="140"
+                  image={Calophylum}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {"Huile Essentielle de Calophylum "}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {"La Puissance Régénérant"}
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Link to="/ficheProduits">
+                    <Button size="small">Learn More</Button>
+                  </Link>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid>
+              <Card
+                sx={{ maxWidth: 345, marginLeft: "20px", marginTop: "20px" }}
+              >
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="140"
+                  image={Coco}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {"Huile de Coco :La Douceur Tropicale"}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {"La Douceur Tropicale"}
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Link to="/ficheProduits">
+                    <Button size="small">Learn More</Button>
+                  </Link>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grid>
+          <Footer />
+        </Container>
       </Container>
     </div>
   );
 };
 
 export default Home;
-
 
 /** <Grid container spacing={2}>
           {Produits.map((item) => {
