@@ -36,8 +36,8 @@ const Home = () => {
         <Typography variant="h4">Notre Histoire</Typography>
         <span className="ligne"></span>
         <br />
-        <Grid container spacing={2}>
-          <Grid item xs={6} md={8}>
+        <Container >
+          <Container className="containerN">
             <Typography variant="h5">
               <span className="echap"></span>
               {
@@ -45,13 +45,13 @@ const Home = () => {
               }
               <br />
             </Typography>
-          </Grid>
-          <Grid item xs={6} md={4}>
+          </Container>
+          <Container item xs={6} md={4}>
             <Box>
               <img src={vanilla} className="img" />
             </Box>
-          </Grid>
-        </Grid>
+          </Container>
+        </Container>
 
         <br />
         <Typography variant="h4">Nos Produits</Typography>

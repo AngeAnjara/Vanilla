@@ -90,6 +90,10 @@
   .containerH{
     display: flex;
     flex-direction: column;
+    .containerN{
+      display: flex;
+      flex-direction: row;
+    }
   }
   .containerM{
     display: grid;
@@ -223,6 +227,13 @@
       gap: 1rem;
      align-items: center;
      margin-left: 0px;
+    }.containerH{
+      display: flex;
+      flex-direction: column;
+      .containerN{
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
