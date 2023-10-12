@@ -1,7 +1,11 @@
+import NavBar from "../Components/NavBar"
 
 const FicheProduits = () => {
   return (
-    <div>FicheProduits</div>
+    <>
+    <NavBar/>
+    
+    </>
   )
 }
 

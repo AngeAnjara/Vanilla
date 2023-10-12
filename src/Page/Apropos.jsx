@@ -1,10 +1,13 @@
 import { Container, Typography } from "@mui/material";
 import "./Fichier Scss/Apropos.scss";
 import vanillaFonds from "../assets/vanillafonds.jpg";
+import NavBar from "../Components/NavBar";
 
 const Apropos = () => {
   return (
-    <Container>
+    <>
+    <NavBar/>
+      <Container>
       <Container sx={{ marginTop: "15px" }} className="containerG">
         <Container className="containerS">
         <img src={vanillaFonds} />
@@ -18,6 +21,8 @@ const Apropos = () => {
        
       </Container>
     </Container>
+    </>
+  
   );
 };
 

@@ -12,10 +12,13 @@ import Ylang from "../assets/Ylang-ylang.jpeg";
 import Calophylum from "../assets/calophylum.jpg";
 import Coco from "../assets/coco.jpg";
 import Footer from "../Components/Footer";
+import NavBar from "../Components/NavBar";
 
 const Home = () => {
   return (
-    <div className="allBox">
+    <>
+    <NavBar/>
+     <div className="allBox">
       <div className="box">
         <div className="boxVanilla">
           <div className="allText">
@@ -171,6 +174,8 @@ const Home = () => {
         </Container>
       </Container>
     </div>
+    </>
+   
   );
 };
 

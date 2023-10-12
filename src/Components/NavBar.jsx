@@ -37,7 +37,7 @@ const NavBar = () => {
           </Link>
         </Typography>
         <Typography className="Link">
-          <Link to="contact" className="lien">
+          <Link to="/contact" className="lien">
             Contact
             <span className="box"></span>
           </Link>
